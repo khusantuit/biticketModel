@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="biTickectModel">
+    <output-path>$PROJECT_DIR$/../biTicketFront/libs</output-path>
+    <root id="archive" name="biTickectModel.jar">
+      <element id="module-output" name="biTicketModel.main" />
+    </root>
+  </artifact>
+</component>
