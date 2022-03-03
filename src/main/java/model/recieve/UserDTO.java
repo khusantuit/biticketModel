@@ -8,6 +8,8 @@ import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
+import java.util.List;
+import java.util.UUID;
 
 @Getter
 @ToString
@@ -22,10 +24,13 @@ public class UserDTO {
     @JsonProperty(value = "phone_number")
     private String phoneNumber;
 
+//    @NotNull
+//    @Enumerated(EnumType.STRING)
+//    @JsonProperty(value = "user_role")
+//    private UserRole userRole;
+
     @NotNull
-    @Enumerated(EnumType.STRING)
-    @JsonProperty(value = "user_role")
-    private UserRole userRole;
+    private List<UUID> userRoles;
 
     @NotNull
     private String password;
